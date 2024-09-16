@@ -1,0 +1,38 @@
+<div class="topnav">
+  <a class="logo" href="#home">
+    <img src="assets/Capture%20d'écran%202024-08-23%20131704.png" alt="Logo"> <!-- Replace with your logo image -->
+  </a>
+  <div class="nav-links">
+
+    <a class="active" (click)="godashboard()" href="/dashboard">Dashboard</a>
+    <a (click)="profile()" href="/admin">Profile</a>
+    <a (click)="about()" href="/header">About</a>
+  </div>
+  <a class="logout" (click)="logout()" href="/home">Logout</a>
+</div>
+
+<div class="dashboard">
+  <h2>Dashboard</h2>
+  <div class="data-panels">
+    <div class="panel">
+      <h3>Temperature</h3>
+      <div class="data-value" [ngClass]="{'alert': temperatureAlert}">
+        {{ data?.temperature }}°C
+      </div>
+      <canvas id="temperatureChart"></canvas>
+    </div>
+    <div class="panel">
+      <h3>Humidity</h3>
+      <div class="data-value" [ngClass]="{'alert': humidityAlert}">
+        {{ data?.humidity }}%
+      </div>
+      <canvas id="humidityChart"></canvas>
+    </div>
+    <div class="panel">
+      <h3>Light Intensity</h3>
+      <div class="data-value">{{ data?.lightIntensity }} lux</div>
+      <canvas id="lightIntensityChart"></canvas>
+    </div>
+
+  </div>
+</div>

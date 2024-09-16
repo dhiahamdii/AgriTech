@@ -1,0 +1,137 @@
+<!--<div class="background-image">
+  <div class="overlay">
+    <div class="content">
+      <h1>Welcome to Our Website</h1>
+      <p>Your gateway to something amazing.</p>
+      <a href="login.html" class="button">Login</a>
+      <a href="register.html" class="button">Register</a>
+    </div>
+  </div>
+</div>
+-->
+<div class="topnav">
+  <a class="logo" href="/home">
+    <img src="assets/Capture%20d'écran%202024-08-23%20131704.png" alt="Logo"> <!-- Replace with your logo image -->
+  </a>
+  <div class="nav-links">
+    <a class="active" href="/home">Home</a>
+    <a (click)="about()" href="/about">About</a>
+  </div>
+  <a> </a>
+</div>
+
+<!-- Navigation
+<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+  <div class="container px-4 px-lg-5">
+    <a class="navbar-brand" href="#page-top">
+      <img src="./assets/Capture%20d'écran%202024-08-23%20131704.png" alt="Logo" class="logo-img">
+
+    </a>
+  </div>
+</nav>
+-->
+<!-- Masthead -->
+<header class="masthead">
+  <div class="container px-4 px-lg-5 h-100">
+    <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+      <div class="col-lg-8 align-self-end">
+        <h1 class="text-info font-weight-bold">ONE platform for any data challenge</h1>
+        <hr class="divider" />
+      </div>
+      <div class="col-lg-8 align-self-baseline">
+        <p class="text-black mb-5">Accelerate your organization’s business initiatives with trusted, high-quality, governed data. <br> « The solutions your team needs ».</p>
+        <a (click)="navigatetologin()" class="btn btn-info"  data-toggle="modal" data-target="#loginModal">Login</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<!-- Services -->
+<section class="page-section" id="services">
+  <div class="container px-4 px-lg-5">
+    <h2 class="text-center mt-0">Nos Services :</h2>
+    <hr class="divider" />
+    <div class="row gx-4 gx-lg-5">
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="mt-5">
+          <div class="mb-2"><i class="bi bi-gem fs-1 text-primary"></i></div>
+          <h3 class="h4 mb-2">Built for the business and technical user</h3>
+          <p class="text-muted mb-0">Companies thrive best when the technology and business goals are aligned...</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="mt-5">
+          <div class="mb-2"><i class="bi bi-laptop fs-1 text-primary"></i></div>
+          <h3 class="h4 mb-2">We are a pleasure to work with</h3>
+          <p class="text-muted mb-0">We are immensely proud of the consistent praise from our customers...</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="mt-5">
+          <div class="mb-2"><i class="bi bi-globe fs-1 text-primary"></i></div>
+          <h3 class="h4 mb-2">Ready to scale across all systems</h3>
+          <p class="text-muted mb-0">Ataccama ONE is technology agnostic and heavily automated...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="page-section" id="contact">
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-lg-8 col-xl-6 text-center">
+        <h2 class="mt-0">Contactez-nous !</h2>
+        <hr class="divider" />
+        <p class="text-muted mb-5">Prêt à démarrer votre prochain projet avec nous ? Envoyez-nous un message et nous vous répondrons dans les plus brefs délais !</p>
+      </div>
+    </div>
+    <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+      <div class="col-lg-6 text-center">
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#contactModal">
+          <i class="bi bi-newspaper"></i> &nbsp; Contact administration
+        </button>
+      </div>
+    </div>
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Contact Administration</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="contactEmail">Email</label>
+                <input type="email" class="form-control" id="contactEmail" placeholder="Enter your email">
+              </div>
+              <div class="form-group">
+                <label for="contactMessage">Message</label>
+                <textarea class="form-control" id="contactMessage" rows="4" placeholder="Enter your message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-info">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-light py-5">
+  <div class="container px-4 px-lg-5">
+    <div class="small text-center text-muted">Copyright : 2024 - © AgriTech 2024</div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

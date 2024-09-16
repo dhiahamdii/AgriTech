@@ -1,0 +1,18 @@
+<div class="topnav">
+  <a class="logo" href="#home">
+    <img src="assets/Capture%20d'écran%202024-08-23%20131704.png" alt="Logo"> <!-- Replace with your logo image -->
+  </a>
+  <div class="nav-links">
+
+    <a (click)="godashboard()" href="/dashboard">Dashboard</a>
+    <a class="active"(click)="profile()" href="/admin">Profile</a>
+    <a (click)="about()" href="/header">About</a>
+  </div>
+  <a class="logout" (click)="logout()" href="/home">Logout</a>
+</div>
+
+<div class="profile-card">
+  <img src="assets/face.png" alt="Profile Picture" class="profile-picture">
+  <h2 class="username">HamadiiiS</h2>
+  <p class="description">A short description about John Doe. Enthusiast in technology and design.</p>
+</div>
